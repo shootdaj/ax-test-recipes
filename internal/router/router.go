@@ -4,6 +4,7 @@ import (
 	"net/http"
 	"strings"
 
+	"github.com/shootdaj/ax-test-recipes/internal/frontend"
 	"github.com/shootdaj/ax-test-recipes/internal/handlers"
 	"github.com/shootdaj/ax-test-recipes/internal/store"
 	"github.com/shootdaj/ax-test-recipes/pkg/utils"
@@ -63,12 +64,7 @@ func New(s *store.Store) http.Handler {
 			mealPlanH.HandleMealPlan(w, r)
 
 		case path == "/" || path == "":
-			// Serve frontend (will be implemented in Phase 4)
-			utils.RespondJSON(w, http.StatusOK, map[string]string{
-				"name":    "Recipe Manager API",
-				"version": "1.0.0",
-				"status":  "ok",
-			})
+			frontend.ServeIndex(w, r)
 
 		default:
 			utils.RespondError(w, http.StatusNotFound, "not found")
