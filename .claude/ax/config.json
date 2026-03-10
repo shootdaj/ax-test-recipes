@@ -41,6 +41,24 @@
       "title": "Core Recipe CRUD & API Foundation",
       "started_at": "2026-03-10T07:55:00Z",
       "completed_at": "2026-03-10T08:10:00Z"
+    },
+    {
+      "phase": 2,
+      "title": "Search, Scaling & Enhanced Recipe Features",
+      "started_at": "2026-03-10T07:55:00Z",
+      "completed_at": "2026-03-10T08:10:00Z"
+    },
+    {
+      "phase": 3,
+      "title": "Meal Planning & Shopping Lists",
+      "started_at": "2026-03-10T07:55:00Z",
+      "completed_at": "2026-03-10T08:10:00Z"
+    },
+    {
+      "phase": 4,
+      "title": "Frontend UI",
+      "started_at": "2026-03-10T08:15:00Z",
+      "completed_at": "2026-03-10T08:30:00Z"
     }
   ],
   "milestone_history": [],
