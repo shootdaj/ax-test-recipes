@@ -1,0 +1,47 @@
+{
+  "initialized_at": "2026-03-10T07:45:00Z",
+  "project_name": "Recipe Manager",
+  "mode": "greenfield",
+  "profile": "balanced",
+  "notion": {
+    "parent_page_id": null,
+    "doc_pages": {
+      "architecture": null,
+      "data_flow": null,
+      "api_reference": null,
+      "component_index": null,
+      "adrs": null,
+      "deployment": null,
+      "dev_workflow": null,
+      "phase_reports": null
+    },
+    "last_updated": null
+  },
+  "testing": {
+    "stack": "go",
+    "language_version": "1.26",
+    "test_framework": "go test",
+    "unit_command": "go test ./internal/... ./pkg/... -v -race -count=1",
+    "integration_command": "go test ./test/integration/... -v -tags integration -count=1",
+    "scenario_command": "go test ./test/scenarios/... -v -tags scenario -count=1",
+    "docker_compose_file": null
+  },
+  "deployment": {
+    "type": "web-app",
+    "provider": "vercel",
+    "url": null
+  },
+  "ci": {
+    "provider": "github-actions",
+    "workflow_file": ".github/workflows/ci.yml"
+  },
+  "phases_completed": [],
+  "milestone_history": [],
+  "last_commands": {
+    "init": "2026-03-10T07:45:00Z",
+    "phase": null,
+    "run": null,
+    "finish": null,
+    "status": null
+  }
+}
