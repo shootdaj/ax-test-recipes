@@ -4,8 +4,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/shootdaj/ax-test-recipes/internal/models"
-	"github.com/shootdaj/ax-test-recipes/internal/store"
+	"github.com/shootdaj/ax-test-recipes/pkg/models"
+	"github.com/shootdaj/ax-test-recipes/pkg/store"
 	"github.com/shootdaj/ax-test-recipes/pkg/utils"
 )
 

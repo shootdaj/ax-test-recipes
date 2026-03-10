@@ -3,8 +3,8 @@ package handler
 import (
 	"net/http"
 
-	"github.com/shootdaj/ax-test-recipes/internal/router"
-	"github.com/shootdaj/ax-test-recipes/internal/store"
+	"github.com/shootdaj/ax-test-recipes/pkg/router"
+	"github.com/shootdaj/ax-test-recipes/pkg/store"
 )
 
 var (

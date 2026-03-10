@@ -9,9 +9,9 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/shootdaj/ax-test-recipes/internal/models"
-	"github.com/shootdaj/ax-test-recipes/internal/router"
-	"github.com/shootdaj/ax-test-recipes/internal/store"
+	"github.com/shootdaj/ax-test-recipes/pkg/models"
+	"github.com/shootdaj/ax-test-recipes/pkg/router"
+	"github.com/shootdaj/ax-test-recipes/pkg/store"
 )
 
 func setupServer() *httptest.Server {

@@ -5,7 +5,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/shootdaj/ax-test-recipes/internal/models"
+	"github.com/shootdaj/ax-test-recipes/pkg/models"
 )
 
 // Store provides thread-safe in-memory storage for recipes and meal plans.

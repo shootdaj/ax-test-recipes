@@ -3,7 +3,7 @@ package store
 import (
 	"testing"
 
-	"github.com/shootdaj/ax-test-recipes/internal/models"
+	"github.com/shootdaj/ax-test-recipes/pkg/models"
 )
 
 func newTestRecipe(title, category string) *models.Recipe {

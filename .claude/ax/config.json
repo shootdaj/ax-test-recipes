@@ -21,7 +21,7 @@
     "stack": "go",
     "language_version": "1.26",
     "test_framework": "go test",
-    "unit_command": "go test ./internal/... ./pkg/... -v -race -count=1",
+    "unit_command": "go test ./pkg/... -v -race -count=1",
     "integration_command": "go test ./test/integration/... -v -tags integration -count=1",
     "scenario_command": "go test ./test/scenarios/... -v -tags scenario -count=1",
     "docker_compose_file": null
