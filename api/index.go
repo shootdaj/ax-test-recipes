@@ -2,10 +2,22 @@ package handler
 
 import (
 	"net/http"
+
+	"github.com/shootdaj/ax-test-recipes/internal/router"
+	"github.com/shootdaj/ax-test-recipes/internal/store"
 )
 
+var (
+	appStore   *store.Store
+	appHandler http.Handler
+)
+
+func init() {
+	appStore = store.New()
+	appHandler = router.New(appStore)
+}
+
+// Handler is the Vercel serverless function entry point.
 func Handler(w http.ResponseWriter, r *http.Request) {
-	w.Header().Set("Content-Type", "application/json")
-	w.WriteHeader(http.StatusOK)
-	w.Write([]byte(`{"status":"ok"}`))
+	appHandler.ServeHTTP(w, r)
 }
